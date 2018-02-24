@@ -13,7 +13,7 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="assets/disney.js"></script>
+  <script type="text/javascript" src="assets/disney0.js"></script>
 </head>
 
 <body>
@@ -73,13 +73,12 @@
               <div class="container questionpage1">
                 <div class="row">
                   <div class="col-xl-12 col-md-12 col-xs-12">
-                    <div class="jumbotron jumbotron-fluid page1">
-                      <h2 class="display-3">Who are the two main characters in the movie "Frozen"?</h2>
+                    <div class="jumbotron jumbotron-fluid page1" id="page1">
+                      <h2 class="display-3" id="question"></h2>
                       <p class="timer"></p>
-                      <button type="button" class="btn btn-info" id="q1p1false">Simba & Scar</button>
-                      <button type="button" class="btn btn-info" id="q1p2false">Aladdin & Princess Jasmine</button>
-                      <button type="button" class="btn btn-info" id="q1true">Anna & Elsa</button>
-                      <button type="button" class="btn btn-info" id="q1p3false">Ariel & Sebastian</button>
+                      <div id="buttonsContainer">
+
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -87,11 +86,12 @@
               <div class="container questionpage1false">
                 <div class="row">
                   <div class="col-xl-12 col-md-12 col-xs-12">
-                    <div class="jumbotron jumbotron-fluid page1">
+                    <div class="jumbotron jumbotron-fluid" id="page2">
                       <h2 class="display-3">Incorrect!</h2>
                       <p class="timer"></p>
-                      <p class="answer">The correct answer was "Anna & Elsa".</p>
-                      <img src="assets/images/Frozen.jpg" alt="">
+                      <p class="answer" id="answer"></p>
+                      <div id="imgDisplay2">
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -99,162 +99,11 @@
               <div class="container questionpage1true">
                 <div class="row">
                   <div class="col-xl-12 col-md-12 col-xs-12">
-                    <div class="jumbotron jumbotron-fluid page1">
+                    <div class="jumbotron jumbotron-fluid" id="page3">
                       <h2 class="display-3">Correct!</h2>
                       <p class="timer"></p>
-                      <img class="img-fluid" src="assets/images/Frozen.jpg" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <!--PAGE TWO-->
-              <div class="container questionpage2">
-                <div class="row">
-                  <div class="col-xl-12 col-md-12 col-xs-12">
-                    <div class="jumbotron jumbotron-fluid page2">
-                      <h2 class="display-3">Who is the main villian in the "Lion King"?</h2>
-                      <p class="timer"></p>
-                      <button type="button" class="btn btn-warning" id="q2p1false">Simba</button>
-                      <button type="button" class="btn btn-warning" id="q2p2false">Mufasa</button>
-                      <button type="button" class="btn btn-warning" id="q2p3false">Rafiki</button>
-                      <button type="button" class="btn btn-warning" id="q2true">Scar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="container questionpage2false">
-                <div class="row">
-                  <div class="col-xl-12 col-md-12 col-xs-12">
-                    <div class="jumbotron jumbotron-fluid page2">
-                      <h2 class="display-3">Incorrect!</h2>
-                      <p class="timer"></p>
-                      <p class="answer">The correct answer was "Scar".</p>
-                      <img class="img-fluid" src="assets/images/Scar.gif" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="container questionpage2true">
-                <div class="row">
-                  <div class="col-xl-12 col-md-12 col-xs-12">
-                    <div class="jumbotron jumbotron-fluid page2">
-                      <h2 class="display-3">Correct!</h2>
-                      <p class="timer"></p>
-                      <img class="img-fluid" src="assets/images/Scar.gif" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <!--PAGE TWO-->
-            <!--PAGE THREE-->
-              <div class="container questionpage3">
-                <div class="row">
-                  <div class="col-xl-12 col-md-12 col-xs-12">
-                    <div class="jumbotron jumbotron-fluid page3">
-                      <h2 class="display-3">In the "JungleBook", which character wanted to learn how to make fire?</h2>
-                      <p class="timer"></p>
-                      <button type="button" class="btn btn-success" id="q3p1false">Mowgli</button>
-                      <button type="button" class="btn btn-success" id="q3true">King Louie</button>
-                      <button type="button" class="btn btn-success" id="q3p2false">Bagheera</button>
-                      <button type="button" class="btn btn-success" id="q3p3false" >Shere Khan</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="container questionpage3false">
-                <div class="row">
-                  <div class="col-xl-12 col-md-12 col-xs-12">
-                    <div class="jumbotron jumbotron-fluid page3">
-                      <h2 class="display-3">Incorrect!</h2>
-                      <p class="timer"></p>
-                      <p class="answer">The correct answer was "King Louie".</p>
-                      <img class="img-fluid" src="assets/images/KingLouie.gif" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="container questionpage3true">
-                <div class="row">
-                  <div class="col-xl-12 col-md-12 col-xs-12">
-                    <div class="jumbotron jumbotron-fluid page3">
-                      <h2 class="display-3">Correct!</h2>
-                      <p class="timer"></p>
-                      <img class="img-fluid" src="assets/images/KingLouie.gif" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--PAGE THREE-->
-              <div class="container questionpage4">
-                <div class="row">
-                  <div class="col-xl-12 col-md-12 col-xs-12">
-                    <div class="jumbotron jumbotron-fluid page4">
-                      <h2 class="display-3">Who was the director of "The Nightmare Before Christmas"?</h2>
-                      <p class="timer"></p>
-                      <button type="button" class="btn btn-dark" id="q4p1false">Tim Burton</button>
-                      <button type="button" class="btn btn-dark" id="q4true">Henry Selick</button>
-                      <button type="button" class="btn btn-dark" id="q4p2false">Steven Spielberg</button>
-                      <button type="button" class="btn btn-dark" id="q4p3false">George Lucas</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="container questionpage4false">
-                <div class="row">
-                  <div class="col-xl-12 col-md-12 col-xs-12">
-                    <div class="jumbotron jumbotron-fluid page4">
-                      <h2 class="display-3">Incorrect!</h2>
-                      <p class="timer"></p>
-                      <p class="answer">The correct answer was "Henry Selick".</p>
-                      <img class="img-fluid" src="assets/images/Nightmare.gif" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="container questionpage4true">
-                <div class="row">
-                  <div class="col-xl-12 col-md-12 col-xs-12">
-                    <div class="jumbotron jumbotron-fluid page4">
-                      <h2 class="display-3">Correct!</h2>
-                      <p class="timer"></p>
-                      <img class="img-fluid" src="assets/images/Nightmare.gif" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="container questionpage5">
-                <div class="row">
-                  <div class="col-xl-12 col-md-12 col-xs-12">
-                    <div class="jumbotron jumbotron-fluid page5">
-                      <h2 class="display-3">In "Cars", who was Lightning McQueen's best friend?</h2>
-                      <p class="timer"></p>
-                      <button type="button" class="btn btn-danger" id="q5p1false">Sally Carrera</button>
-                      <button type="button" class="btn btn-danger" id="q5p1false">Doc Hudson</button>
-                      <button type="button" class="btn btn-danger" id="q5p1false">Sarge</button>
-                      <button type="button" class="btn btn-danger" id="q5true">Tow Mater</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="container questionpage5false">
-                <div class="row">
-                  <div class="col-xl-12 col-md-12 col-xs-12">
-                    <div class="jumbotron jumbotron-fluid page5">
-                      <h2 class="display-3">Incorrect!</h2>
-                      <p class="timer"></p>
-                      <p class="answer">The correct answer was "Tow Mater".</p>
-                      <img class="img-fluid" src="assets/images/Cars.gif" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="container questionpage5true">
-                <div class="row">
-                  <div class="col-xl-12 col-md-12 col-xs-12">
-                    <div class="jumbotron jumbotron-fluid page5">
-                      <h2 class="display-3">Correct!</h2>
-                      <p class="timer"></p>
-                      <img class="img-fluid" src="assets/images/Cars.gif" alt="">
+                      <div id="imgDisplay1">
+                      </div>
                     </div>
                   </div>
                 </div>
