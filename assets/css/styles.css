@@ -90,7 +90,8 @@ textarea {
   min-width: 100%;
 }
 .profilePicture {
-  width: 100%;
+  width: 85%;
+  height: 300px;
   border-radius: 20px;
 }
 .github, .stackoverflow, .linkedin {
@@ -124,6 +125,18 @@ opacity: 0.5;
   font-size: 2rem;
   background: white;
   text-align: center;
+}
+.navbarPic {
+  z-index: 100;
+  position: absolute;
+  top: 7.5%;
+  left: -10%;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  border: 6px solid white!important;
+
+
 }
 
 .absolute2, .absolute4 {
