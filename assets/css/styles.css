@@ -89,10 +89,20 @@ main .card1 h4 {
 textarea {
   min-width: 100%;
 }
+h4 img {
+  width: 45px;
+  height: 35px;
+}
 .profilePicture {
   width: 85%;
   height: 300px;
   border-radius: 20px;
+}
+.profilePicture2 {
+  width: 85%;
+  height: 300px;
+  border-radius: 20px;
+  margin-left: 10px;
 }
 .github, .stackoverflow, .linkedin {
   height: 100%;
@@ -105,9 +115,6 @@ opacity: 0.5;
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 100%;
-}
-.disney {
-  height: 279.13px;
 }
 .images-relative {
   position: relative;

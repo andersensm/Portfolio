@@ -18,6 +18,7 @@
   <header>
     <div class="container">
       <div class="row">
+
         <!--Icons will display in a row together on md+ devices -->
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
           <img src="assets/images/ProfilePic_v3.jpg" class="float-left img-fluid img-uniq navbarPic" alt="Responsive image">
@@ -55,19 +56,71 @@
         <!--Icons will display in a row together on md+ devices -->
         <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-xs-12">
           <div class="card card1">
-            <h4 class="card-header">Contact</h4>
+            <h4 class="card-header"><strong>My Favorite Foods<img src="assets/images/Fork-Knife-Header.svg" alt="Fork-Knife-Plate"> Hangman</strong></h4>
             <div class="card-body">
-              <div class="row">
-                <!--Icons will display per their element for all devices -->
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="form">
-                    <h5>Name</h5>
-                    <input type="text" name="fullName" placeholder="Full Name">
-                    <h5>Email</h5>
-                    <input type="text" name="emailAddress" placeholder="Email Address">
-                    <h5>Message</h5>
-                    <textarea name="privateMessage" placeholder="Private Message"></textarea>
-                    <input class="submit" type="submit" name="submit" value="Submit">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card">
+                      <div class="card-header" id="pictitle">
+                        <strong>Hangman Pic & Food Pic Place Holder</strong>
+                      </div>
+                      <div class="card-body">
+                        <img src="assets/images/Hangman.jpg" id="winimg">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="row">
+                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="card">
+                          <div class="card-header">
+                            <strong>Game Statistics:</strong>
+                          </div>
+                          <div class="card-body">
+                            <p id="startRecs">To begin playing press any keys, Hint: Start with vowels</p>
+                            <p># of Wins: <span id="winsTracker"></span></p>
+                            <p># of Losses: <span id="lossesTracker"></span></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="card">
+                          <div class="card-header">
+                            <strong>Current Word:</strong>
+                          </div>
+                          <div class="card-body">
+                            <span id="underscore"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="card">
+                      <div class="card-header">
+                        <strong>Number of Guesses Remaining:</strong>
+                      </div>
+                      <div class="card-body">
+                        <span id="guessWrongMaximum"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <div class="card">
+                      <div class="card-header">
+                        <strong>Wrong Guess: </strong>
+                      </div>
+                      <div class="card-body">
+                        <span id="wrongGuess"></span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -111,9 +164,11 @@
     </div>
   </footer>
 
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/hangman-game.js"></script>
 </body>
 
 </html>
