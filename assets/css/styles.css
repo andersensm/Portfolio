@@ -100,10 +100,13 @@ textarea {
 .github:hover, .stackoverflow:hover, .linkedin:hover {
 opacity: 0.5;
 }
-.beach, .burger, .dog, .movies, .music {
+.disney, .burger, .dog, .movies, .music {
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 100%;
+}
+.disney {
+  height: 279.13px;
 }
 .images-relative {
   position: relative;

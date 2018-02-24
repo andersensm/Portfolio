@@ -1,3 +1,7 @@
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
 $(document).ready(function(){
 
 //click Submit, button click
