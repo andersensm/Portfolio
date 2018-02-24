@@ -1,0 +1,13 @@
+body {
+  background-color: black;
+}
+label {
+  color: white;
+}
+.container-margin {
+  margin-top: 20px;
+}
+
+img {
+  border: solid 2px black;
+}

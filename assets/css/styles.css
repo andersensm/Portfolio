@@ -1,0 +1,205 @@
+
+/* Font updates for all applicable elements */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font-family: 'Raleway', sans-serif;
+}
+/*Header and Navbar settings */
+header {
+  background-color: white;
+}
+@keyframes nameTitle {
+    from {background-color: white;}
+    to {background-color: #2AB546;}
+}
+header h2 {
+  background-color: #2AB546;
+  text-align: center;
+  color: white;
+  animation-name: nameTitle;
+  animation-duration: 4s;
+  padding: 30px;
+  margin-bottom: 0;
+  height: 100%;
+}
+body{
+  background-image: url("../images/dust_scratches.png");
+}
+p {
+   line-height: 1.75em;
+ }
+ main .card {
+   border: 0.5px solid lightgrey;
+ }
+header, main .card1, main .card2 {
+   border-bottom-width: 3.5px;
+   border-bottom-style: solid;
+   border-bottom-color: lightgrey;
+ }
+header .navbar-dark .navbar-nav .nav-link {
+  color: #2AB546;
+  border: .5px solid #343a40;
+  margin: 0px 20px;
+
+}
+header nav.bg-dark  {
+  margin: 20px 0px;
+  display: block;
+ }
+header .navbar-dark .navbar-nav .nav-link:hover {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border: .5px solid white;
+}
+ /*Main Section Begins */
+main .card-header {
+  background-color: #2AB546;
+  color: white;
+  opacity: .75;
+}
+main .card1 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+main .card2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.card h5 {
+  text-align: center;
+}
+.form h5, .form input {
+  font-style: italic;
+  text-align: left
+}
+main .card1 h4 {
+  text-align: left;
+}
+textarea {
+  min-width: 100%;
+}
+.profilePicture {
+  width: 100%;
+  border-radius: 20px;
+}
+.github, .stackoverflow, .linkedin {
+  height: 100%;
+  width: 100%;
+}
+.github:hover, .stackoverflow:hover, .linkedin:hover {
+opacity: 0.5;
+}
+.beach, .burger, .dog, .movies, .music {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+.images-relative {
+  position: relative;
+}
+.img-uniq {
+  max-width: 40%;
+  margin-right: 20px;
+}
+.absolute1, .absolute3, .absolute5 {
+  position: absolute;
+  top: 60%;
+  width: 96%;
+  height:15%;
+  color: #2AB546;
+  font-size: 2rem;
+  background: white;
+  text-align: center;
+}
+
+.absolute2, .absolute4 {
+  position: absolute;
+  top: 60%;
+  width: 96%;
+  height:15%;
+  color: #2AB546;
+  font-size: 2rem;
+  background: white;
+  text-align: center;
+}
+ /*Main Section Ends*/
+footer {
+  border-top-style: solid;
+  border-top-color: #2AB546;
+  border-top-width: 5px;
+  background-color: #666666;
+  height: 100px;
+}
+footer p {
+  text-align: center !important;
+  margin-top: 30px;
+  color: white;
+}
+@media screen and (min-width:0px) {
+  .absolute1, .absolute3, .absolute5 {
+    width: 90%;
+    font-size: 1.25rem;
+  }
+  .absolute2, .absolute4 {
+    width: 90%;
+    font-size: 1.25rem;
+}
+}
+@media screen and (min-width:400px) {
+  .absolute1, .absolute3, .absolute5 {
+    width: 96%;
+    font-size: 2rem;
+  }
+  .absolute2, .absolute4 {
+    width: 96%;
+    font-size: 2rem;
+}
+}
+@media screen and (min-width:576px) {
+  .absolute1, .absolute3, .absolute5 {
+    width: 96%;
+    font-size: 2.5rem;
+  }
+  .absolute2, .absolute4 {
+    width: 96%;
+    font-size: 2.5rem;
+}
+}
+@media screen and (min-width:768px) {
+  .absolute1, .absolute3, .absolute5 {
+    width: 93%;
+    font-size: 1.25rem;
+  }
+  .absolute2, .absolute4 {
+    width: 93%;
+    font-size: 1.25rem;
+}
+@media screen and (min-width:992px) {
+  .absolute1, .absolute3, .absolute5 {
+    width: 96%;
+    font-size: 1.75rem;
+  }
+  .absolute2, .absolute4 {
+    width: 96%;
+    font-size: 1.75rem;
+}
+}
+@media screen and (min-width:1200px) {
+  .absolute1, .absolute3, .absolute5 {
+    font-size: 2rem;
+  }
+  .absolute2, .absolute4 {
+    font-size: 2rem;
+}
+}

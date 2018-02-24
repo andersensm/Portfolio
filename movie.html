@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>About</title>
+  <!-- Link to CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/movies.js"></script>
+</head>
+
+<body>
+  <!-- Header with title and navbar container-->
+  <header>
+    <div class="container">
+      <div class="row">
+        <!--Icons will display in a row together on md+ devices -->
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <h2>Sean Andersen</h2>
+        </div>
+        <!--Icons will display in a row together on md+ devices -->
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="row">
+              <div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 col-xs-12">
+                <span class="navbar-brand" href="#">Profile</span>
+              </div>
+              <div class="col-xl-8 col-lg-8 col-md-4 col-sm-12 col-xs-12">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Contact sheet in Card format -->
+  <main>
+    <div class="container">
+      <div class="row">
+        <!--Icons will display in a row together on md+ devices -->
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+
+          <div class="card card1">
+            <h4 class="card-header">Open Movie Database API</h4>
+            <div class="card-body">
+              <div class="col-lg-12">
+                <div class="form-group has-success">
+                  <label class="form-control-label" for="inputSuccess1"><strong>Movie Search</strong></label>
+                  <input type="text" placeholder="Enter Movie Name" class="form-control is-valid movieinput">
+                  <input type="submit" value="Submit" id="inputValid">
+                  <div class="valid-feedback"></div>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="card mb-3">
+                  <h3 class="card-header"></h3>
+                  <div class="card-body">
+                    <h5 class="card-title" id="Title"><strong>Movie Title</strong></h5>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text img"><strong>Movie Poster</strong></p>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text" id="Plot"><strong>Movie Plot</strong></p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item" id="Year"><strong>Release Date</strong></li>
+                    <li class="list-group-item" id="Actors"><strong>Actors</strong></li>
+                    <li class="list-group-item" id="Awards"><strong>Awards</strong></li>
+                    <li class="list-group-item" id="BoxOffice"><strong>Box Office</strong></li>
+                  </ul>
+                  <div class="card-footer text-muted" id="Website">
+                    Movie Website
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Icons will display in a row together on md+ devices -->
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="card card2">
+            <h5 class="card-header">Connect With Me</h5>
+            <div class="card-body">
+              <div class="row">
+                <!--Icons will display in a row together on all devices -->
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <a href="https://github.com/"><img src="assets/images/GitHubIcon.png" alt="GitHub" class="img-fluid github"></a>
+                </div>
+                <!--Icons will display in a row together on all devices -->
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <a href="https://www.linkedin.com/feed/"><img src="assets/images/Linkedin-2.png" alt="Linkedin" class="img-fluid linkedin"></a>
+                </div>
+                <!--Icons will display in a row together on all devices -->
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <a href="https://stackoverflow.com/"><img src="assets/images/StackOverflow-2.png" alt="StackOverflow" class="img-fluid stackoverflow"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Footer container with copyright information -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <!--Icons will display in a row together on all devices -->
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <p>&copy; Copyright 2017 Sean Andersen</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
