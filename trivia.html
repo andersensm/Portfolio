@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Link to CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/disney.js"></script>
+</head>
+
+<body>
+  <!-- Header with title and navbar container-->
+  <header>
+    <div class="container">
+      <div class="row">
+        <!--Icons will display in a row together on md+ devices -->
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <h2>Sean Andersen</h2>
+        </div>
+        <!--Icons will display in a row together on md+ devices -->
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="row">
+              <div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 col-xs-12">
+                <span class="navbar-brand" href="#">Profile</span>
+              </div>
+              <div class="col-xl-8 col-lg-8 col-md-4 col-sm-12 col-xs-12">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Contact sheet in Card format -->
+  <main>
+    <div class="container">
+      <div class="row">
+        <!--Icons will display in a row together on md+ devices -->
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+          <div class="card card1">
+            <h4 class="card-header">Timed Trivia</h4>
+            <div class="card-body">
+              <div class="container start">
+                <div class="row">
+                  <div class="col-xl-12 col-md-12 col-xs-12">
+                    <div class="jumbotron jumbotron-fluid beginpage">
+                      <h1 class="display-3">Disney Trivia</h1>
+                      <button type="button" class="btn btn-primary begin" id="begin">Start the journey...</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container questionpage1">
+                <div class="row">
+                  <div class="col-xl-12 col-md-12 col-xs-12">
+                    <div class="jumbotron jumbotron-fluid page1">
+                      <h2 class="display-3">Who are the two main characters in the movie "Frozen"?</h2>
+                      <p class="timer"></p>
+                      <button type="button" class="btn btn-info" id="q1p1false">Simba & Scar</button>
+                      <button type="button" class="btn btn-info" id="q1p2false">Aladdin & Princess Jasmine</button>
+                      <button type="button" class="btn btn-info" id="q1true">Anna & Elsa</button>
+                      <button type="button" class="btn btn-info" id="q1p3false">Ariel & Sebastian</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container questionpage1false">
+                <div class="row">
+                  <div class="col-xl-12 col-md-12 col-xs-12">
+                    <div class="jumbotron jumbotron-fluid page1">
+                      <h2 class="display-3">Incorrect!</h2>
+                      <p class="timer"></p>
+                      <p class="answer">The correct answer was "Anna & Elsa".</p>
+                      <img src="assets/images/Frozen.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container questionpage1true">
+                <div class="row">
+                  <div class="col-xl-12 col-md-12 col-xs-12">
+                    <div class="jumbotron jumbotron-fluid page1">
+                      <h2 class="display-3">Correct!</h2>
+                      <p class="timer"></p>
+                      <img class="img-fluid" src="assets/images/Frozen.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!--PAGE TWO-->
+              <div class="container questionpage2">
+                <div class="row">
+                  <div class="col-xl-12 col-md-12 col-xs-12">
+                    <div class="jumbotron jumbotron-fluid page2">
+                      <h2 class="display-3">Who is the main villian in the "Lion King"?</h2>
+                      <p class="timer"></p>
+                      <button type="button" class="btn btn-warning" id="q2p1false">Simba</button>
+                      <button type="button" class="btn btn-warning" id="q2p2false">Mufasa</button>
+                      <button type="button" class="btn btn-warning" id="q2p3false">Rafiki</button>
+                      <button type="button" class="btn btn-warning" id="q2true">Scar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container questionpage2false">
+                <div class="row">
+                  <div class="col-xl-12 col-md-12 col-xs-12">
+                    <div class="jumbotron jumbotron-fluid page2">
+                      <h2 class="display-3">Incorrect!</h2>
+                      <p class="timer"></p>
+                      <p class="answer">The correct answer was "Scar".</p>
+                      <img class="img-fluid" src="assets/images/Scar.gif" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container questionpage2true">
+                <div class="row">
+                  <div class="col-xl-12 col-md-12 col-xs-12">
+                    <div class="jumbotron jumbotron-fluid page2">
+                      <h2 class="display-3">Correct!</h2>
+                      <p class="timer"></p>
+                      <img class="img-fluid" src="assets/images/Scar.gif" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!--PAGE TWO-->
+            <!--PAGE THREE-->
+              <div class="container questionpage3">
+                <div class="row">
+                  <div class="col-xl-12 col-md-12 col-xs-12">
+                    <div class="jumbotron jumbotron-fluid page3">
+                      <h2 class="display-3">In the "JungleBook", which character wanted to learn how to make fire?</h2>
+                      <p class="timer"></p>
+                      <button type="button" class="btn btn-success" id="q3p1false">Mowgli</button>
+                      <button type="button" class="btn btn-success" id="q3true">King Louie</button>
+                      <button type="button" class="btn btn-success" id="q3p2false">Bagheera</button>
+                      <button type="button" class="btn btn-success" id="q3p3false" >Shere Khan</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container questionpage3false">
+                <div class="row">
+                  <div class="col-xl-12 col-md-12 col-xs-12">
+                    <div class="jumbotron jumbotron-fluid page3">
+                      <h2 class="display-3">Incorrect!</h2>
+                      <p class="timer"></p>
+                      <p class="answer">The correct answer was "King Louie".</p>
+                      <img class="img-fluid" src="assets/images/KingLouie.gif" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container questionpage3true">
+                <div class="row">
+                  <div class="col-xl-12 col-md-12 col-xs-12">
+                    <div class="jumbotron jumbotron-fluid page3">
+                      <h2 class="display-3">Correct!</h2>
+                      <p class="timer"></p>
+                      <img class="img-fluid" src="assets/images/KingLouie.gif" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--PAGE THREE-->
+              <div class="container questionpage4">
+                <div class="row">
+                  <div class="col-xl-12 col-md-12 col-xs-12">
+                    <div class="jumbotron jumbotron-fluid page4">
+                      <h2 class="display-3">Who was the director of "The Nightmare Before Christmas"?</h2>
+                      <p class="timer"></p>
+                      <button type="button" class="btn btn-dark" id="q4p1false">Tim Burton</button>
+                      <button type="button" class="btn btn-dark" id="q4true">Henry Selick</button>
+                      <button type="button" class="btn btn-dark" id="q4p2false">Steven Spielberg</button>
+                      <button type="button" class="btn btn-dark" id="q4p3false">George Lucas</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container questionpage4false">
+                <div class="row">
+                  <div class="col-xl-12 col-md-12 col-xs-12">
+                    <div class="jumbotron jumbotron-fluid page4">
+                      <h2 class="display-3">Incorrect!</h2>
+                      <p class="timer"></p>
+                      <p class="answer">The correct answer was "Henry Selick".</p>
+                      <img class="img-fluid" src="assets/images/Nightmare.gif" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container questionpage4true">
+                <div class="row">
+                  <div class="col-xl-12 col-md-12 col-xs-12">
+                    <div class="jumbotron jumbotron-fluid page4">
+                      <h2 class="display-3">Correct!</h2>
+                      <p class="timer"></p>
+                      <img class="img-fluid" src="assets/images/Nightmare.gif" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container questionpage5">
+                <div class="row">
+                  <div class="col-xl-12 col-md-12 col-xs-12">
+                    <div class="jumbotron jumbotron-fluid page5">
+                      <h2 class="display-3">In "Cars", who was Lightning McQueen's best friend?</h2>
+                      <p class="timer"></p>
+                      <button type="button" class="btn btn-danger" id="q5p1false">Sally Carrera</button>
+                      <button type="button" class="btn btn-danger" id="q5p1false">Doc Hudson</button>
+                      <button type="button" class="btn btn-danger" id="q5p1false">Sarge</button>
+                      <button type="button" class="btn btn-danger" id="q5true">Tow Mater</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container questionpage5false">
+                <div class="row">
+                  <div class="col-xl-12 col-md-12 col-xs-12">
+                    <div class="jumbotron jumbotron-fluid page5">
+                      <h2 class="display-3">Incorrect!</h2>
+                      <p class="timer"></p>
+                      <p class="answer">The correct answer was "Tow Mater".</p>
+                      <img class="img-fluid" src="assets/images/Cars.gif" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container questionpage5true">
+                <div class="row">
+                  <div class="col-xl-12 col-md-12 col-xs-12">
+                    <div class="jumbotron jumbotron-fluid page5">
+                      <h2 class="display-3">Correct!</h2>
+                      <p class="timer"></p>
+                      <img class="img-fluid" src="assets/images/Cars.gif" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container conclusionpage6">
+                <div class="row">
+                  <div class="col-xl-12 col-md-12 col-xs-12">
+                    <div class="jumbotron jumbotron-fluid page6">
+                      <h2 class="display-3">Congratulations!</h2>
+                      <p>Correct Answers: <span id="correct"></span> </p>
+                      <p>Incorrect Answers: <span id="incorrect"></span> </p>
+                      <button type="button" class="btn btn-primary" id="end">Finish the journey...</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Icons will display in a row together on md+ devices -->
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="card card2">
+            <h5 class="card-header">Connect With Me</h5>
+            <div class="card-body">
+              <div class="row">
+                <!--Icons will display in a row together on all devices -->
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <a href="https://github.com/"><img src="assets/images/GitHubIcon.png" alt="GitHub" class="img-fluid github"></a>
+                </div>
+                <!--Icons will display in a row together on all devices -->
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <a href="https://www.linkedin.com/feed/"><img src="assets/images/Linkedin-2.png" alt="Linkedin" class="img-fluid linkedin"></a>
+                </div>
+                <!--Icons will display in a row together on all devices -->
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <a href="https://stackoverflow.com/"><img src="assets/images/StackOverflow-2.png" alt="StackOverflow" class="img-fluid stackoverflow"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Footer container with copyright information -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <!--Icons will display in a row together on all devices -->
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <p>&copy; Copyright 2017 Sean Andersen</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

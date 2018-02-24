@@ -149,6 +149,58 @@ footer p {
   margin-top: 30px;
   color: white;
 }
+/*------------------------Disney Trivia------------------------------------ */
+.beginpage {
+  padding: 10px;
+  background-color: #A991D4;
+  border-radius: 10px;
+}
+.page1 {
+  padding: 10px;
+  background-color: #48D1CC;
+  border-radius: 10px;
+}
+.page2 {
+  padding: 10px;
+  background-color: #FFFF00;
+  border-radius: 10px;
+}
+.page3{
+  padding: 10px;
+  background-color: #8B4513;
+  border-radius: 10px;
+}
+.page5{
+  padding: 10px;
+  background-color: #FFDEAD;
+  border-radius: 10px;
+}
+.page6 {
+  padding: 10px;
+  background-color: #A991D4;
+  border-radius: 10px;
+}
+.begin, .btn-primary, .btn-secondary, .btn-success, .btn-info, .btn-warning, .btn-primary, .btn-danger, .btn-link, .btn-dark{
+  margin: 10px;
+  font-size: 20px;
+  display:block;
+}
+.answer {
+  color: black;
+}
+h1.display-3 {
+  font-weight: 450;
+  font-size: 50px;
+  color: black;
+  margin: 20px;
+  text-align: center;
+}
+.display-3 {
+  margin: 20px;
+  text-align: center;
+  color: black;
+}
+/*------------------------Disney Trivia------------------------------------ */
 @media screen and (min-width:0px) {
   .absolute1, .absolute3, .absolute5 {
     width: 90%;

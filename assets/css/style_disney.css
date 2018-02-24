@@ -1,0 +1,80 @@
+.jumbotron {
+    margin: 200px 40px;
+    border: 1.5px solid black;
+    border-bottom: 3px solid black;
+    opacity: 0.85;
+}
+.beginpage {
+  padding: 0px;
+  background-color: #A991D4;
+}
+.page1 {
+  padding: 0px;
+  background-color: #48D1CC;
+}
+.page2 {
+  padding: 0px;
+  background-color: #FFFF00;
+}
+.page3{
+  padding: 0px;
+  background-color: #8B4513;
+}
+.page5{
+  padding: 0px;
+  background-color: #FFDEAD;
+}
+.page6 {
+  padding: 0px;
+  background-color: #A991D4;
+}
+h1.display-3 {
+  font-weight: 450;
+  font-size: 125px;
+  color: black;
+  margin: 20px;
+  text-align: center;
+}
+.display-3 {
+  margin: 20px;
+  text-align: center;
+  color: black;
+}
+p {
+    font-size: 35px;
+    margin: 20px;
+    text-align: center;
+}
+.begin, .btn-primary, .btn-secondary, .btn-success, .btn-info, .btn-warning, .btn-primary, .btn-danger, .btn-link, .btn-dark{
+  margin: 20px;
+  font-size: 35px;
+  display:block;
+}
+h1, h2, p, body {
+   font-family: 'WaltographRegular';
+   font-weight: normal;
+   font-style: normal;
+}
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/disney.jpg");
+}
+.answer {
+  color: black;
+}
+img {
+    margin: 10px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 1.5px solid black;
+    border-bottom: 3px solid black;
+}
+footer h4 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 24px;
+  color: white;
+}
