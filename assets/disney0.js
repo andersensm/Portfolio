@@ -1,15 +1,11 @@
 $(document).ready(function() {
-
-//each question is going to be a different container in the HTML file
-
-//clean code
 var begin = false
 var q1false;
 var q1true;
 var conclusion;
 var correct = 0
 var incorrect = 0
-
+var complete = false
 var questions = [
     {
     questionName: 'Frozen',
@@ -52,10 +48,8 @@ var questions = [
     img: "assets/images/Cars.gif"
   },
 ]
-
 var intervalId;
 var time = 15
-
 //-------------Timers-----------------------------------------------------------
 function reset() {
  time = 15;
@@ -65,6 +59,7 @@ function stop() {
  console.log("stopping");
  clearInterval(intervalId);
  $(".timer").text("Time Remaining: " + time + " seconds.");
+ newPage()
 }
 function startp1() {
  intervalId = setInterval(countp1, 1000);
@@ -81,16 +76,14 @@ function countp1() {
  }
 }
 //-------------Timers-----------------------------------------------------------
-
-
-//randomize object within questions array
 var randomWord = questions[Math.floor(Math.random() * questions.length)]
 console.log('test', randomWord)
-
 function buttonStyle() {
   switch(randomWord.questionName) {
     case 'Frozen':
         $("#buttonsContainer").empty()
+        $("#imgDisplay1").empty()
+        $("#imgDisplay2").empty()
         document.getElementById("page1").style.backgroundColor = '#48D1CC'
         document.getElementById("page2").style.backgroundColor = '#48D1CC'
         document.getElementById("page3").style.backgroundColor = '#48D1CC'
@@ -106,6 +99,8 @@ function buttonStyle() {
       break;
     case 'Lion King':
         $("#buttonsContainer").empty()
+        $("#imgDisplay1").empty()
+        $("#imgDisplay2").empty()
         document.getElementById("page1").style.backgroundColor  = '#FFFF00'
         document.getElementById("page2").style.backgroundColor  = '#FFFF00'
         document.getElementById("page3").style.backgroundColor  = '#FFFF00'
@@ -121,6 +116,8 @@ function buttonStyle() {
       break;
     case 'JungleBook':
           $("#buttonsContainer").empty()
+          $("#imgDisplay1").empty()
+          $("#imgDisplay2").empty()
           document.getElementById("page1").style.backgroundColor  = '#8B4513'
           document.getElementById("page2").style.backgroundColor  = '#8B4513'
           document.getElementById("page3").style.backgroundColor  = '#8B4513'
@@ -136,6 +133,8 @@ function buttonStyle() {
       break;
     case 'Xmas':
             $("#buttonsContainer").empty()
+            $("#imgDisplay1").empty()
+            $("#imgDisplay2").empty()
             document.getElementById("page1").style.backgroundColor  = '#D3D3D3'
             document.getElementById("page2").style.backgroundColor  = '#D3D3D3'
             document.getElementById("page3").style.backgroundColor  = '#D3D3D3'
@@ -151,6 +150,8 @@ function buttonStyle() {
       break;
     case 'Cars':
               $("#buttonsContainer").empty()
+              $("#imgDisplay1").empty()
+              $("#imgDisplay2").empty()
               document.getElementById("page1").style.backgroundColor = '#FFDEAD'
               document.getElementById("page2").style.backgroundColor = '#FFDEAD'
               document.getElementById("page3").style.backgroundColor = '#FFDEAD'
@@ -166,6 +167,8 @@ function buttonStyle() {
       break;
     default:
                 $("#buttonsContainer").empty()
+                $("#imgDisplay1").empty()
+                $("#imgDisplay2").empty()
                 document.getElementById("page1").style.backgroundColor  = '#A991D4'
                 document.getElementById("page2").style.backgroundColor  = '#A991D4'
                 document.getElementById("page3").style.backgroundColor  = '#A991D4'
@@ -182,16 +185,11 @@ function buttonStyle() {
     }
 
 }
-
 function randomGenerator() {
     $('#question').text(randomWord.question)
     console.log(randomWord.question)
     buttonStyle()
   }
-  //Make a check to see which of the questions this code is for to make styling for the buttons and the background
-
-
-
 function superbeginning() {
   if (begin === false) {
     $(".start").toggle(true);
@@ -219,6 +217,10 @@ function clickstart() {
   })
 }
 function questionpage1() {
+  if (questions.length < 1) {
+    conclusionpage()
+    return
+  } else {
     randomGenerator()
     reset();
     startp1();
@@ -248,47 +250,87 @@ function questionpage1() {
       }
     })
   }
-
-
+}
 function sevenSeconds1() {
   $(".questionpage1false").toggle(false);
   $(".questionpage1true").toggle(false);
+  $(".questionpage1").toggle(true);
+  newPage()
+  randomWord = questions[Math.floor(Math.random() * questions.length)]
+  questionpage1();
 }
-//**************
-
-
 function resetGame() {
+  randomWord = questions[Math.floor(Math.random() * questions.length)]
   superbeginning();
   }
-
 function newPage() {
-  questions.splice(randomWord, 1)
-  if (questions.length > 0) {
-    randomWord = questions[Math.floor(Math.random() * questions.length)]
-  } else {
-    conclusionpage()
+    for (var i = 0; i < questions.length; i++) {
+      if (randomWord === questions[i]) {
+        questions.splice(i, 1)
+        console.log(questions)
+      }
+    }
   }
-}
-
 function conclusionpage() {
+              questions = [
+                  {
+                  questionName: 'Frozen',
+                  question: 'Who are the two main characters in the movie "Frozen"?',
+                  options: ['Simba & Scar', 'Aladdin & Princess Jasmine', 'Anna & Elsa', 'Ariel & Sebastian'],
+                  correct: 'Anna & Elsa',
+                  correctAns: 'The correct answer was "Anna & Elsa".',
+                  img: "assets/images/Frozen.jpg"
+                },
+                {
+                  questionName: 'Lion King',
+                  question: 'Who is the main villian in the "Lion King"?',
+                  options: ['Simba', 'Mufasa', 'Rafiki', 'Scar'],
+                  correct: 'Scar',
+                  correctAns: 'The correct answer was "Scar".',
+                  img: "assets/images/Scar.gif"
+                },
+                {
+                  questionName: 'JungleBook',
+                  question: 'In the "JungleBook", which character wanted to learn how to make fire?',
+                  options: ['Mowgli', 'King Louie', 'Bagheera', 'Shere Khan'],
+                  correct: 'King Louie',
+                  correctAns: 'The correct answer was "King Louie".',
+                  img: "assets/images/KingLouie.gif"
+                },
+                {
+                  questionName: 'Xmas',
+                  question: 'Who was the director of "The Nightmare Before Christmas"?',
+                  options: ['Time Burton', 'Henry Selick', 'Steven Spielberg', 'George Lucas'],
+                  correct: 'Henry Selick',
+                  correctAns: 'The correct answer was "Henry Selick".',
+                  img: "assets/images/Nightmare.gif"
+                },
+                {
+                  questionName: 'Cars',
+                  question: 'In "Cars", who was Lightning McQueens best friend?',
+                  options: ['Sally Carrera', 'Doc Hudson', 'Sarge', 'Tow Mater'],
+                  correct: 'Tow Mater',
+                  correctAns: 'The correct answer was "Tow Mater".',
+                  img: "assets/images/Cars.gif"
+                },
+              ]
+              $(".questionpage1").toggle(false);
+              $(".questionpage1false").toggle(false);
+              $(".questionpage1true").toggle(false);
+              $(".conclusionpage6").toggle(true);
               $("#correct").text(correct)
               $("#incorrect").text(incorrect)
-              //need to start timer, get timeout setup
               $("#end").off().on("click", function() {
                   conclusion = true
                   console.log('conclusion',conclusion)
                   if (conclusion === true) {
-                    //new window display time Remaining
-                    //text that says 'Incorrect'
-                    //tell the correct answer was: 'X'
                     $(".conclusionpage6").toggle(false);
                     $(".start").toggle(true);
                     begin = false
+                    complete = false
                     resetGame();
                   }
               })
             }
-
 superbeginning();
-
 })

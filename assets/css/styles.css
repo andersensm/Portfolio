@@ -142,8 +142,6 @@ opacity: 0.5;
   height: 85px;
   border-radius: 50%;
   border: 6px solid white!important;
-
-
 }
 
 .absolute2, .absolute4 {
@@ -177,6 +175,10 @@ footer p {
 }
 .page1 {
   padding: 10px;
+  border-radius: 10px;
+}
+#imgDisplay1, #imgDisplay2, #page1, #page2, #page3, #question, .timer, #answer, .correct, .incorrect {
+  margin:10px;
 }
 .page6 {
   padding: 10px;
@@ -204,17 +206,7 @@ h1.display-3 {
   color: black;
 }
 /*------------------------Disney Trivia------------------------------------ */
-@media screen and (min-width:0px) {
-  .absolute1, .absolute3, .absolute5 {
-    width: 90%;
-    font-size: 1.25rem;
-  }
-  .absolute2, .absolute4 {
-    width: 90%;
-    font-size: 1.25rem;
-}
-}
-@media screen and (min-width:400px) {
+@media screen and (max-width:330px) {
   .absolute1, .absolute3, .absolute5 {
     width: 96%;
     font-size: 2rem;
@@ -223,8 +215,30 @@ h1.display-3 {
     width: 96%;
     font-size: 2rem;
 }
+.connectIcons {
+  width:33.33%
 }
-@media screen and (min-width:576px) {
+.navbarPic {
+  left: -12%;
+}
+}
+@media screen and (min-width:331px) {
+  .absolute1, .absolute3, .absolute5 {
+    width: 96%;
+    font-size: 2rem;
+  }
+  .absolute2, .absolute4 {
+    width: 96%;
+    font-size: 2rem;
+}
+.connectIcons {
+  width:33.33%
+}
+.navbarPic {
+  left: -5%;
+}
+}
+@media screen and (min-width:401px) {
   .absolute1, .absolute3, .absolute5 {
     width: 96%;
     font-size: 2.5rem;
@@ -232,6 +246,12 @@ h1.display-3 {
   .absolute2, .absolute4 {
     width: 96%;
     font-size: 2.5rem;
+}
+.connectIcons {
+  width:33.33%
+}
+.navbarPic {
+  left: 0%;
 }
 }
 @media screen and (min-width:768px) {
@@ -243,6 +263,10 @@ h1.display-3 {
     width: 93%;
     font-size: 1.25rem;
 }
+.navbarPic {
+  left: -15%;
+}
+}
 @media screen and (min-width:992px) {
   .absolute1, .absolute3, .absolute5 {
     width: 96%;
@@ -252,12 +276,18 @@ h1.display-3 {
     width: 96%;
     font-size: 1.75rem;
 }
+.navbarPic {
+  left: -15%;
 }
-@media screen and (min-width:1200px) {
+}
+@media screen and (min-width:1055px) {
   .absolute1, .absolute3, .absolute5 {
     font-size: 2rem;
   }
   .absolute2, .absolute4 {
     font-size: 2rem;
+}
+.navbarPic {
+  left: -10%;
 }
 }
