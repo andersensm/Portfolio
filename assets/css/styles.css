@@ -228,7 +228,19 @@ img {
   width:33.33%
 }
 .navbarPic {
+  display: none;
   left: -12%;
+}
+.profilePicture {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+}
+.profilePicture2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  margin-left: 10px;
 }
 }
 @media screen and (min-width:331px) {
@@ -244,7 +256,19 @@ img {
   width:33.33%
 }
 .navbarPic {
+  display: none;
   left: -5%;
+}
+.profilePicture {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+}
+.profilePicture2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  margin-left: 10px;
 }
 }
 @media screen and (min-width:401px) {
@@ -260,7 +284,19 @@ img {
   width:33.33%
 }
 .navbarPic {
+  display: none;
   left: 0%;
+}
+.profilePicture {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+}
+.profilePicture2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  margin-left: 10px;
 }
 }
 @media screen and (min-width:768px) {
@@ -273,7 +309,19 @@ img {
     font-size: 1.25rem;
 }
 .navbarPic {
+  display: none;
   left: -15%;
+}
+.profilePicture {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+}
+.profilePicture2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  margin-left: 10px;
 }
 }
 @media screen and (min-width:992px) {
@@ -286,6 +334,7 @@ img {
     font-size: 1.75rem;
 }
 .navbarPic {
+  display: initial;
   left: -15%;
 }
 }
@@ -297,6 +346,7 @@ img {
     font-size: 2rem;
 }
 .navbarPic {
+  display: initial;
   left: -10%;
 }
 }
