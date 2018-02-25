@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/styles.css">
+
+
 </head>
 
 <body>
@@ -62,12 +64,12 @@
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <div class="form">
                     <h5>Name</h5>
-                    <input type="text" name="fullName" placeholder="Full Name">
+                    <input type="text" name="fullName" placeholder="Full Name" id="name">
                     <h5>Email</h5>
-                    <input type="text" name="emailAddress" placeholder="Email Address">
+                    <input type="email" name="emailAddress" placeholder="Email Address" id="email">
                     <h5>Message</h5>
-                    <textarea name="privateMessage" placeholder="Private Message"></textarea>
-                    <input class="submit" type="submit" name="submit" value="Submit">
+                    <textarea type ="text" name="privateMessage" placeholder="Private Message" id="message"></textarea>
+                    <input class="submit" type="submit" name="submit" value="Submit" id="submit">
                   </div>
                 </div>
               </div>
@@ -111,9 +113,8 @@
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/contact.js"></script>
 </body>
 
 </html>
