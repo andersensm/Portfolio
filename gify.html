@@ -5,14 +5,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Movie Search</title>
+  <title>Gify Generator</title>
   <!-- Link to CSS -->
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="assets/movies.js"></script>
+  <script type="text/javascript" src="assets/gify.js"></script>
 </head>
 
 <body>
@@ -20,6 +20,7 @@
   <header>
     <div class="container">
       <div class="row">
+
         <!--Icons will display in a row together on md+ devices -->
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
           <img src="assets/images/ProfilePic_v3.jpg" class="float-left img-fluid img-uniq navbarPic" alt="Responsive image">
@@ -56,44 +57,30 @@
       <div class="row">
         <!--Icons will display in a row together on md+ devices -->
         <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-xs-12">
-
           <div class="card card1">
-            <h4 class="card-header">Open Movie Database API</h4>
+            <h4 class="card-header">Car Gifys</h4>
             <div class="card-body">
-              <div class="col-lg-12">
-                <div class="form-group has-success">
-                  <label class="form-control-label" for="inputSuccess1"><strong>Movie Search</strong></label>
-                  <input type="text" placeholder="Enter Movie Name" class="form-control is-valid movieinput">
-                  <input type="submit" value="Submit" id="inputValid">
-                  <div class="valid-feedback"></div>
+              <div class="row">
+                <div class="container">
+                  <div class="row">
+                    <form class="form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="text" placeholder="Type Car Name" id="newTopic">
+                      <button class="btn btn-secondary my-2 my-sm-0" type="submit" id="Submit">Add New Car</button>
+                      <button class="btn btn-secondary my-2 my-sm-0" type="clear" id="Clear">Clear New Cars</button>
+                    </form>
+                    <div class="col-lg-12">
+                      <div class="buttonContainer" data-toggle="buttons" id="buttonsContainer"></div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-lg-12">
-                <div class="card mb-3">
-                  <h3 class="card-header"></h3>
-                  <div class="card-body">
-                    <h5 class="card-title" id="Title"><strong>Movie Title</strong></h5>
-                  </div>
-                  <div class="card-body">
-                    <p class="card-text img"><strong>Movie Poster</strong></p>
-                  </div>
-                  <div class="card-body">
-                    <p class="card-text" id="Plot"><strong>Movie Plot</strong></p>
-                  </div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item" id="Year"><strong>Release Date</strong></li>
-                    <li class="list-group-item" id="Actors"><strong>Actors</strong></li>
-                    <li class="list-group-item" id="Awards"><strong>Awards</strong></li>
-                    <li class="list-group-item" id="BoxOffice"><strong>Box Office</strong></li>
-                  </ul>
-                  <div class="card-footer text-muted" id="Website">
-                    Movie Website
+                </div>
+                <div class="container">
+                  <div class="row gifyContainer" id="gifyContainer">
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
         <!--Icons will display in a row together on md+ devices -->
         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
           <div class="card card2">
@@ -130,6 +117,7 @@
       </div>
     </div>
   </footer>
+
 </body>
 
 </html>

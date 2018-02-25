@@ -19,10 +19,6 @@ time, mark, audio, video {
 header {
   background-color: white;
 }
-@keyframes nameTitle {
-    from {background-color: white;}
-    to {background-color: #2AB546;}
-}
 header h2 {
   background-color: #2AB546;
   text-align: center;
@@ -111,7 +107,7 @@ h4 img {
 .github:hover, .stackoverflow:hover, .linkedin:hover {
 opacity: 0.5;
 }
-.disney, .burger, .dog, .movies, .music {
+.disney, .burger, .dog, .movies, .gify {
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 100%;
@@ -190,6 +186,9 @@ footer p {
   font-size: 20px;
   display:block;
 }
+.gifyBtn {
+  display: inline;
+}
 .answer {
   color: black;
 }
@@ -205,6 +204,16 @@ h1.display-3 {
   text-align: center;
   color: black;
 }
+div.margin {
+  margin-left: 15px;
+}
+.card {
+  margin-top: 10px;
+}
+img {
+  border-radius: 10px;
+}
+
 /*------------------------Disney Trivia------------------------------------ */
 @media screen and (max-width:330px) {
   .absolute1, .absolute3, .absolute5 {
