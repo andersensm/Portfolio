@@ -7,5 +7,4 @@ $(document).ready(function() {
     $("#email").val("")
     $("#message").val("")
   })
-
 })
