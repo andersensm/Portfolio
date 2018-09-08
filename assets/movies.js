@@ -1,8 +1,12 @@
 $(document).ready(function(){
 
-  // $("#busClick").on("click", function(){
-  //     $("#busModal").modal();
-  // });
+  $("#mailHomeClick").on("click", function(){
+      $("#mailModal").modal();
+  });
+  $("#phoneHomeClick").on("click", function(){
+      $("#phoneModal").modal();
+  });
+
   //
   // $('#busModal').on('shown.bs.modal', function () {
   //   $("#newBtn").on("click",function(){
