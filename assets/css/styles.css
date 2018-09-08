@@ -103,11 +103,11 @@ h4 img {
   border-radius: 20px;
   margin-left: 10px;
 }
-.github, .stackoverflow, .linkedin {
+.github, .stackoverflow, .linkedin, .modalIcons {
   height: 100%;
   width: 100%;
 }
-.github:hover, .stackoverflow:hover, .linkedin:hover {
+.github:hover, .stackoverflow:hover, .linkedin:hover, .modalIcons:hover {
 opacity: 0.5;
 }
 .disney, .burger, .dog, .movies, .gify {
@@ -126,7 +126,7 @@ opacity: 0.5;
   position: absolute;
   top: 60%;
   width: 96%;
-  height:15%;
+  /* height:15%; */
   color: #2AB546;
   font-size: 2rem;
   background: white;
