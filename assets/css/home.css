@@ -153,15 +153,15 @@ opacity: 0.5;
 }
  /*Main Section Ends*/
 footer {
-  border-top-style: solid;
+  /* border-top-style: solid;
   border-top-color: #2AB546;
   border-top-width: 5px;
-  background-color: #666666;
-  height: 100px;
+  background-color: #666666; */
+  height: 200px;
 }
 footer p {
   text-align: center !important;
-  margin-top: 30px;
+  margin-top: 300px;
   color: white;
 }
 #homeProfilePic {
@@ -241,6 +241,13 @@ img {
     margin: 0 20px;
     font-size: 100%;
     line-height: 20px;
+}
+.homeIcons {
+  height: 100%!important;
+  width: 100%!important;
+}
+.homeIcons:hover {
+  opacity:0.5;
 }
 /*------------------------Disney Trivia------------------------------------ */
 @media screen and (max-width:330px) {

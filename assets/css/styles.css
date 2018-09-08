@@ -115,6 +115,9 @@ opacity: 0.5;
   padding-bottom: 1rem;
   width: 100%;
 }
+.disney:hover, .burger:hover, .dog:hover, .movies:hover, .gify:hover {
+  opacity: 0.7;
+}
 .images-relative {
   position: relative;
 }
@@ -155,15 +158,15 @@ opacity: 0.5;
 }
  /*Main Section Ends*/
 footer {
-  border-top-style: solid;
+  /* border-top-style: solid;
   border-top-color: #2AB546;
   border-top-width: 5px;
-  background-color: #666666;
+  background-color: #666666; */
   height: 100px;
 }
 footer p {
   text-align: center !important;
-  margin-top: 30px;
+  margin-top: 300px;
   color: white;
 }
 /*------------------------Disney Trivia------------------------------------ */
@@ -224,6 +227,7 @@ img {
     font-size: 100%;
     line-height: 20px;
 }
+
 
 /*------------------------Media Screen------------------------------------ */
 @media screen and (max-width:330px) {
