@@ -17,7 +17,7 @@ $(document).ready(function(){
 
   $(function () {
     $('[data-toggle="popover"]').popover({
-          placement: 'bottom',
+          placement: 'top',
           html: 'true',
           title : '<span class="text-info"><strong>title</strong></span>'+
                   '<button type="button" id="close" class="close" onclick="$(&quot;#example&quot;).popover(&quot;hide&quot;);">&times;</button>',

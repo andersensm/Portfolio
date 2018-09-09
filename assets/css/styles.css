@@ -93,17 +93,17 @@ h4 img {
   height: 35px;
 }
 .profilePicture {
-  width: 85%;
-  height: 300px;
+  width: 300px;
+  height: 352px;
   border-radius: 20px;
 }
 .profilePicture2 {
-  width: 85%;
+  width: 300px;
   height: 300px;
   border-radius: 20px;
   margin-left: 10px;
 }
-.github, .stackoverflow, .linkedin, .modalIcons {
+.github, .stackoverflow, .linkedin, .modalIcons, .homeIcons {
   height: 100%;
   width: 100%;
 }
@@ -243,7 +243,8 @@ img {
     font-size: 2rem;
 }
 .connectIcons {
-  width:30.0%
+  width:30.0%;
+  height: 30.0%;
 }
 .navbarPic {
   display: none;
@@ -251,7 +252,7 @@ img {
 }
 .profilePicture {
   width: 150px;
-  height: 150px;
+  height: 176px;
   border-radius: 20px;
 }
 .profilePicture2 {
@@ -271,7 +272,8 @@ img {
     font-size: 2rem;
 }
 .connectIcons {
-  width:30.0%
+  width:30.0%;
+  height: 30.0%;
 }
 .navbarPic {
   display: none;
@@ -279,7 +281,7 @@ img {
 }
 .profilePicture {
   width: 150px;
-  height: 150px;
+  height: 176px;
   border-radius: 20px;
 }
 .profilePicture2 {
@@ -299,7 +301,8 @@ img {
     font-size: 2.5rem;
 }
 .connectIcons {
-  width:30.0%
+  width:30.0%;
+  height: 30.0%;
 }
 .navbarPic {
   display: none;
@@ -307,7 +310,7 @@ img {
 }
 .profilePicture {
   width: 150px;
-  height: 150px;
+  height: 176px;
   border-radius: 20px;
 }
 .profilePicture2 {
@@ -318,6 +321,10 @@ img {
 }
 }
 @media screen and (min-width:768px) {
+  .connectIcons {
+    width:50.0%;
+    height: 50.0%;
+  }
   .absolute1, .absolute3, .absolute5 {
     width: 93%;
     font-size: 1.25rem;
@@ -331,17 +338,33 @@ img {
   left: -15%;
 }
 .profilePicture {
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 352px;
   border-radius: 20px;
 }
 .profilePicture2 {
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
   border-radius: 20px;
   margin-left: 10px;
 }
 }
+
+@media screen and (min-width:812px) {
+  .absolute1, .absolute3, .absolute5 {
+    width: 96%;
+    font-size: 1.75rem;
+  }
+  .absolute2, .absolute4 {
+    width: 96%;
+    font-size: 1.75rem;
+}
+.homeIcons {
+  height: 100%!important;
+  width: 100%!important;
+}
+}
+
 @media screen and (min-width:992px) {
   .absolute1, .absolute3, .absolute5 {
     width: 96%;

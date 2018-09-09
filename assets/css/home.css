@@ -459,6 +459,23 @@ svg {
 }
 }
 
+@media screen and (min-width:812px) {
+  .absolute1, .absolute3, .absolute5 {
+    width: 96%;
+    font-size: 1.75rem;
+  }
+  .absolute2, .absolute4 {
+    width: 96%;
+    font-size: 1.75rem;
+}
+nav {
+  left: -10%;
+}
+.homeIcons {
+  height: 40px!important;
+  width: 40px!important;
+}
+}
 
 @media screen and (min-width:992px) {
   .absolute1, .absolute3, .absolute5 {
