@@ -260,7 +260,7 @@ img {
     font-size: 2rem;
 }
 .connectIcons {
-  width:33.33%
+  width:20%
 }
 /* .navbarPic {
   display: none;
@@ -277,7 +277,12 @@ img {
   border-radius: 20px;
   margin-left: 10px;
 }
+.homeIcons {
+  height: 60%!important;
+  width: 60%!important;
 }
+}
+
 @media screen and (min-width:331px) {
   .absolute1, .absolute3, .absolute5 {
     width: 96%;
@@ -288,7 +293,7 @@ img {
     font-size: 2rem;
 }
 .connectIcons {
-  width:33.33%
+  width:20%
 }
 /* .navbarPic {
   display: none;
@@ -305,7 +310,12 @@ img {
   border-radius: 20px;
   margin-left: 10px;
 }
+.homeIcons {
+  height: 60%!important;
+  width: 60%!important;
 }
+}
+
 @media screen and (min-width:401px) {
   .absolute1, .absolute3, .absolute5 {
     width: 96%;
@@ -316,7 +326,7 @@ img {
     font-size: 2.5rem;
 }
 .connectIcons {
-  width:33.33%
+  width:20%
 }
 /* .navbarPic {
   display: none;
@@ -333,7 +343,12 @@ img {
   border-radius: 20px;
   margin-left: 10px;
 }
+.homeIcons {
+  height: 60%!important;
+  width: 60%!important;
 }
+}
+
 @media screen and (min-width:768px) {
   .absolute1, .absolute3, .absolute5 {
     width: 93%;
@@ -358,7 +373,12 @@ img {
   border-radius: 20px;
   margin-left: 10px;
 }
+.homeIcons {
+  height: 100%!important;
+  width: 100%!important;
 }
+}
+
 @media screen and (min-width:992px) {
   .absolute1, .absolute3, .absolute5 {
     width: 96%;
@@ -372,6 +392,10 @@ img {
   display: initial;
   left: -15%;
 } */
+.homeIcons {
+  height: 100%!important;
+  width: 100%!important;
+}
 }
 @media screen and (min-width:1055px) {
   .absolute1, .absolute3, .absolute5 {
@@ -384,4 +408,8 @@ img {
   display: initial;
   left: -10%;
 } */
+.homeIcons {
+  height: 100%!important;
+  width: 100%!important;
+}
 }
