@@ -227,6 +227,9 @@ img {
     font-size: 100%;
     line-height: 20px;
 }
+.homeIcons:hover {
+  opacity:0.5;
+}
 
 
 /*------------------------Media Screen------------------------------------ */
