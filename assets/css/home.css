@@ -18,6 +18,9 @@ time, mark, audio, video {
 header {
   /* background-color: white; */
 }
+nav {
+  margin-top: 150px;
+}
 header h2 {
   text-align: center;
   /* color: white; */
@@ -137,7 +140,7 @@ opacity: 0.5;
   left: -10%;
   width: 85px;
   height: 85px; */
-  border-radius: 50%;
+  /* border-radius: 50%; */
   border: 6px solid white!important;
 }
 
@@ -250,6 +253,26 @@ img {
   opacity:0.5;
 }
 /*------------------------Disney Trivia------------------------------------ */
+
+/*------------------------Home Page Name------------------------------------*/
+body {
+  text-align: center;
+  /* background #141414: url("https://unsplash.it/1228/880?image=302");
+  background-size: cover;
+  background-position: 50%;
+  height: 0vh; */
+}
+
+svg {
+  position: absolute;
+  /* top: 50%; */
+  /* margin-top: 60px; */
+  /* left: 50%; */
+  margin-left: -200px;
+}
+
+/*------------------------Home Page Name------------------------------------*/
+
 @media screen and (max-width:330px) {
   .absolute1, .absolute3, .absolute5 {
     width: 96%;
@@ -260,7 +283,8 @@ img {
     font-size: 2rem;
 }
 .connectIcons {
-  width:20%
+  width:20%;
+  height:20%;
 }
 /* .navbarPic {
   display: none;
@@ -281,9 +305,23 @@ img {
   height: 60%!important;
   width: 60%!important;
 }
+svg {
+  position: absolute;
+  /* top: 50%; */
+  /* margin-top: 60px; */
+  /* left: 50%; */
+  margin-left: -230px;
+}
 }
 
 @media screen and (min-width:331px) {
+  svg {
+    position: absolute;
+    /* top: 50%; */
+    /* margin-top: 60px; */
+    /* left: 50%; */
+    margin-left: -178px;
+  }
   .absolute1, .absolute3, .absolute5 {
     width: 96%;
     font-size: 2rem;
@@ -311,12 +349,51 @@ img {
   margin-left: 10px;
 }
 .homeIcons {
-  height: 60%!important;
-  width: 60%!important;
+  height: 100%!important;
+  width: 100%!important;
 }
 }
 
 @media screen and (min-width:401px) {
+  svg {
+    position: absolute;
+    /* top: 50%; */
+    /* margin-top: 60px; */
+    /* left: 50%; */
+    margin-left: -190px;
+  }
+  .absolute1, .absolute3, .absolute5 {
+    width: 96%;
+    font-size: 2.5rem;
+  }
+  .absolute2, .absolute4 {
+    width: 96%;
+    font-size: 2.5rem;
+}
+/* .connectIcons {
+  width:20%
+} */
+/* .navbarPic {
+  display: none;
+  left: 0%;
+} */
+.profilePicture {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+}
+.profilePicture2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+.homeIcons {
+  height: 100%!important;
+  width: 100%!important;
+}
+}
+@media screen and (min-width:576px) {
   .absolute1, .absolute3, .absolute5 {
     width: 96%;
     font-size: 2.5rem;
@@ -326,7 +403,7 @@ img {
     font-size: 2.5rem;
 }
 .connectIcons {
-  width:20%
+  margin-left: 12.5px;
 }
 /* .navbarPic {
   display: none;
@@ -344,8 +421,8 @@ img {
   margin-left: 10px;
 }
 .homeIcons {
-  height: 60%!important;
-  width: 60%!important;
+  height: 100%!important;
+  width: 100%!important;
 }
 }
 
@@ -377,7 +454,11 @@ img {
   height: 100%!important;
   width: 100%!important;
 }
+.connectIcons {
+  margin-left: 0px;
 }
+}
+
 
 @media screen and (min-width:992px) {
   .absolute1, .absolute3, .absolute5 {
@@ -388,10 +469,9 @@ img {
     width: 96%;
     font-size: 1.75rem;
 }
-/* .navbarPic {
-  display: initial;
-  left: -15%;
-} */
+nav {
+  left: -10%;
+}
 .homeIcons {
   height: 100%!important;
   width: 100%!important;
@@ -404,10 +484,9 @@ img {
   .absolute2, .absolute4 {
     font-size: 2rem;
 }
-/* .navbarPic {
-  display: initial;
-  left: -10%;
-} */
+nav {
+  left: 0%;
+}
 .homeIcons {
   height: 100%!important;
   width: 100%!important;

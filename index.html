@@ -23,6 +23,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="assets/css/home.css">
 
 </head>
@@ -34,7 +35,38 @@
       <div class="row">
         <!--Icons will display in a row together on md+ devices -->
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h1>Sean Andersen</h1>
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="450px" height="240px" xml:space="preserve">
+              <defs>
+                <pattern id="water" width=".25" height="0.4" patternContentUnits="objectBoundingBox">
+                  <path fill="#000" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
+                </pattern>
+
+                <text id="text" transform="translate(2,116)" font-family="'Raleway'" font-size="55">Sean Andersen</text>
+
+                <mask id="text-mask">
+                  <use x="0" y="0" xlink:href="#text" opacity="1" fill="#ffffff"/>
+                </mask>
+
+                <g id="eff">
+                  <use x="0" y="0" xlink:href="#text" fill="#ffffff"/>
+
+              <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" x="-300" y="50" width="1200" height="48" opacity="0.3">
+                <animate attributeType="xml" attributeName="x" from="-300" to="0" repeatCount="indefinite" dur="2s"/>
+              </rect>
+               <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="45" width="1600" height="48" opacity="0.3">
+                <animate attributeType="xml" attributeName="x" from="-400" to="0" repeatCount="indefinite" dur="3s"/>
+              </rect>
+
+              <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="55" width="800" height="48" opacity="0.3">
+                <animate attributeType="xml" attributeName="x" from="-200" to="0" repeatCount="indefinite" dur="1.4s"/>
+              </rect>
+                  <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="55" width="2000" height="48" opacity="0.3">
+                <animate attributeType="xml" attributeName="x" from="-500" to="0" repeatCount="indefinite" dur="2.8s"/>
+              </rect>
+                </g>
+              </defs>
+            	  <use xlink:href="#eff" opacity="0.9" style="mix-blend-mode:color-burn"/>
+            </svg>
         </div>
       </div>
       <!--row-->
@@ -76,11 +108,11 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12"></div>
-        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12"></div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
           <img src="assets/images/ProfilePic_v4.jpg" id="homeProfilePic" class="float-left img-fluid img-uniq navbarPic" alt="Responsive image">
         </div>
-        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12"></div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12"></div>
       </div>
       <br>
       <br>
@@ -88,29 +120,29 @@
       <div class="row">
         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-0 col-xs-0"></div>
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-          <div class="col-xl-1 col-lg-1 col-md-1 col-sm-0 col-xs-0 connectIcons"></div>
-          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-1 col-xs-1 connectIcons">
+          <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-0 connectIcons"></div>
+          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 connectIcons">
             <a href="https://github.com/andersensm" target="_blank"><img src="assets/images/GitHubIconv4.png" alt="Personal Github" class="img-fluid homeIcons"></a>
           </div>
-          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-1 col-xs-1 connectIcons">
+          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 connectIcons">
             <a href="https://www.linkedin.com/in/sean-andersen-12a78699/" target="_blank"><img src="assets/images/LinkedinIconv3.png" alt="Personal LinkedIn" class="img-fluid homeIcons"></a>
           </div>
-          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-1 col-xs-1 connectIcons">
+          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 connectIcons">
             <a href="https://www.facebook.com/sean.andersen.1481" target="_blank"><img src="assets/images/FacebookIconv3.png" alt="StackOverflow" class="img-fluid homeIcons"></a>
           </div>
-          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-1 col-xs-1 connectIcons">
+          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 connectIcons">
             <a href="mailto:smandersen13@gmail.com"><img src="assets/images/GoogleIconv2.png" data-toggle="modal" data-target="#mailHomeClick" alt="Gmail Email" class="img-fluid homeIcons"></a>
           </div>
-          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-1 col-xs-1 connectIcons">
+          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2 connectIcons">
             <a href="#"><img src="assets/images/Phone-iconv2.png" data-toggle="modal" data-target="#phoneHomeClick" alt="Phone Number" class="img-fluid homeIcons"></a>
           </div>
-          <div class="col-xl-1 col-lg-1 col-md-1 col-sm-0 col-xs-0 connectIcons"></div>
+          <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-0 connectIcons"></div>
         </div>
       </div>
       <div class="col-xl-3 col-lg-3 col-md-3 col-sm-0 col-xs-0"></div>
     </div>
 
-<!--EMAIL MODAL -->
+    <!--EMAIL MODAL -->
     <div class="modal fade" tabindex="-1" id="mailHomeClick" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -131,26 +163,26 @@
       </div>
     </div>
 
-<!--Phone Number MODAL -->
-<div class="modal fade" tabindex="-1" id="phoneHomeClick" role="dialog" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Contact Phone Numbers</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <!--Phone Number MODAL -->
+    <div class="modal fade" tabindex="-1" id="phoneHomeClick" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Contact Phone Numbers</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
-      </div>
-      <div class="modal-body">
-        <p><strong>Primary: </strong>703-340-0532</p>
-        <p><strong>Secondary: </strong>571-319-8217</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Primary: </strong>703-340-0532</p>
+            <p><strong>Secondary: </strong>571-319-8217</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
 
   </main>
