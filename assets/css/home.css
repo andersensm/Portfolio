@@ -257,10 +257,10 @@ img {
 /*------------------------Home Page Name------------------------------------*/
 body {
   text-align: center;
-  /* background #141414: url("https://unsplash.it/1228/880?image=302");
+  background #141414: url("https://unsplash.it/1228/880?image=302");
   background-size: cover;
   background-position: 50%;
-  height: 0vh; */
+  height: 100vh;
 }
 
 svg {
