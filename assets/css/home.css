@@ -34,7 +34,7 @@ h3 {
   font-size: 18px;
 }
 body{
-  background-image: url("../images/Dark-Pattern-Background.jpg");
+  background-image: url("../images/backgroundv2.jpg");
   background-position: 50%;
 }
 p {
@@ -49,7 +49,7 @@ header, main .card1, main .card2 {
    border-bottom-color: white; */
  }
 header .navbar-dark .navbar-nav .nav-link {
-  color: #2AB546;
+  color: #53c0cc;
   border: .5px solid #343a40;
   margin: 0px 20px;
 }
@@ -178,7 +178,7 @@ footer p {
   background-color: transparent!important;
 }
 .navbar-dark .navbar-nav .nav-link {
-  color: #90EE90;
+  color: #53c0cc;
 }
 /* .navbarPic {
   z-index: 100;

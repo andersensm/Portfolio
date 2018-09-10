@@ -20,9 +20,9 @@ header {
   background-color: white;
 }
 header h2 {
-  background-color: #90EE90;
+  background-color: #1f4f58;
   text-align: center;
-  color: #24292e;
+  color: #8FBC8F;
   animation-name: nameTitle;
   animation-duration: 4s;
   padding: 30px;
@@ -34,7 +34,7 @@ h3 {
   color: #24292e;
 }
 body{
-  background-image: url("../images/Dark-Pattern-Background.jpg");
+  background-image: url("../images/backgroundv2.jpg");
   background-position: 50%;
 }
 p {
@@ -49,7 +49,7 @@ header, main .card1, main .card2 {
    border-bottom-color: lightgrey;
  }
 header .navbar-dark .navbar-nav .nav-link {
-  color: #90EE90;
+  color: #53c0cc;
   border: .5px solid #343a40;
   margin: 0px 20px;
 
@@ -64,8 +64,8 @@ header .navbar-dark .navbar-nav .nav-link:hover {
   border: .5px solid white;
 }
  /*Main Section Begins */
-main .card-header {
-  background-color: #90EE90;
+.card-header {
+  background-color: #20B2AA;
   color: #24292e;
 }
 main .card1 {
@@ -174,6 +174,10 @@ footer p {
   text-align: center !important;
   margin-top: 300px;
   color: white;
+}
+.hangman-header, .movie-header{
+  background-color: #66CDAA!important;
+  color: #24292e;
 }
 /*------------------------Disney Trivia------------------------------------ */
 .beginpage {
