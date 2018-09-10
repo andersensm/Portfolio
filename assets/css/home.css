@@ -18,9 +18,9 @@ time, mark, audio, video {
 header {
   /* background-color: white; */
 }
-nav {
+/* nav {
   margin-top: 150px;
-}
+} */
 header h2 {
   text-align: center;
   /* color: white; */
@@ -255,7 +255,7 @@ img {
 /*------------------------Disney Trivia------------------------------------ */
 
 /*------------------------Home Page Name------------------------------------*/
-body {
+/* body {
   text-align: center;
   background #141414: url("https://unsplash.it/1228/880?image=302");
   background-size: cover;
@@ -266,10 +266,10 @@ body {
 svg {
   position: absolute;
   top: 50%;
-  margin-top: -60px;
+  /* margin-top: -60px; */
   left: 50%;
   margin-left: -200px;
-}
+} */
 
 /*------------------------Home Page Name------------------------------------*/
 

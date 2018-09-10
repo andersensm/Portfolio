@@ -34,6 +34,7 @@ h3 {
 }
 body{
   background-image: url("../images/Dark-Pattern-Background.jpg");
+  background-position: 50%;
 }
 p {
    line-height: 1.75em;
