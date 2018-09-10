@@ -20,9 +20,9 @@ header {
   background-color: white;
 }
 header h2 {
-  background-color: #2AB546;
+  background-color: #90EE90;
   text-align: center;
-  color: white;
+  color: #24292e;
   animation-name: nameTitle;
   animation-duration: 4s;
   padding: 30px;
@@ -31,6 +31,7 @@ header h2 {
 }
 h3 {
   font-size: 18px;
+  color: #24292e;
 }
 body{
   background-image: url("../images/Dark-Pattern-Background.jpg");
@@ -48,7 +49,7 @@ header, main .card1, main .card2 {
    border-bottom-color: lightgrey;
  }
 header .navbar-dark .navbar-nav .nav-link {
-  color: #2AB546;
+  color: #90EE90;
   border: .5px solid #343a40;
   margin: 0px 20px;
 
@@ -64,9 +65,8 @@ header .navbar-dark .navbar-nav .nav-link:hover {
 }
  /*Main Section Begins */
 main .card-header {
-  background-color: #2AB546;
+  background-color: #90EE90;
   color: white;
-  opacity: .75;
 }
 main .card1 {
   margin-top: 40px;
@@ -78,6 +78,7 @@ main .card2 {
 }
 .card h5 {
   text-align: center;
+  color: #24292e;
 }
 .form h5, .form input {
   font-style: italic;
@@ -85,6 +86,10 @@ main .card2 {
 }
 main .card1 h4 {
   text-align: left;
+  color: #24292e;
+}
+h4.card-header{
+  color: #24292e;
 }
 textarea {
   min-width: 100%;
@@ -131,7 +136,7 @@ opacity: 0.5;
   top: 60%;
   width: 96%;
   /* height:15%; */
-  color: #2AB546;
+  color: #24292e;
   font-size: 2rem;
   background: white;
   text-align: center;
@@ -152,7 +157,7 @@ opacity: 0.5;
   top: 60%;
   width: 96%;
   height:15%;
-  color: #2AB546;
+  color: #24292e;
   font-size: 2rem;
   background: white;
   text-align: center;
@@ -202,7 +207,7 @@ footer p {
 h1.display-3 {
   font-weight: 450;
   font-size: 50px;
-  color: black;
+  color: #24292e;
   margin: 20px;
   text-align: center;
 }
