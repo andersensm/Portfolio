@@ -187,7 +187,7 @@ function defaultVariables() {
 	document.getElementById('pictitle').innerHTML = picturename;
 	document.getElementById('pictitle').style.color = "";
 	document.getElementById('pictitle').style.background = "";
-	document.getElementById("winimg").src="./assets/images/Hangman.jpg"
+	document.getElementById("winimg").src="./assets/images/hangman.png"
 }
 
 function underscore() {

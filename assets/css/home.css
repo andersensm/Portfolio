@@ -65,8 +65,7 @@ header .navbar-dark .navbar-nav .nav-link:hover {
  /*Main Section Begins */
 main .card-header {
   background-color: #2AB546;
-  color: white;
-  opacity: .75;
+  color: #2AB546;
 }
 main .card1 {
   margin-top: 40px;
